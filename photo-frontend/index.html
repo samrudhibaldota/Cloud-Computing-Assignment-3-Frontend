@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Photo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <h1 class="title">My Photo App</h1>
+    <p class="subtitle">Upload, search, and manage your photo collection</p>
+
+    <div class="layout">
+      <!-- Upload panel -->
+      <div class="card">
+        <h2>Upload a Photo</h2>
+
+        <input
+          id="fileInput"
+          type="file"
+          accept="image/*"
+          class="input"
+        />
+
+        <input
+          id="customLabels"
+          type="text"
+          class="input"
+          placeholder="Custom labels (comma-separated)"
+        />
+
+        <button id="uploadBtn" class="button" onclick="uploadPhoto()">
+          Upload Photo
+        </button>
+
+        <div id="uploadMsg" class="msg"></div>
+      </div>
+
+      <!-- Search panel -->
+      <div class="card">
+        <h2>Search Photos</h2>
+
+        <input
+          id="searchQuery"
+          type="text"
+          class="input"
+          placeholder="Show me dogs or cats"
+        />
+
+        <button id="searchBtn" class="button" onclick="searchPhotos()">
+          Search
+        </button>
+
+        <div id="searchMsg" class="msg"></div>
+      </div>
+    </div>
+
+    <!-- Search results -->
+    <div id="results" class="results-grid"></div>
+  </div>
+
+ <!-- ====== API Gateway JS SDK scripts ====== -->
+<script src="apiGateway-js-sdk 6/lib/axios/dist/axios.standalone.js"></script>
+
+<!-- CryptoJS -->
+<script src="apiGateway-js-sdk 6/lib/CryptoJS/rollups/crypto-js.js"></script>
+<script src="apiGateway-js-sdk 6/lib/CryptoJS/rollups/sha256.js"></script>
+<script src="apiGateway-js-sdk 6/lib/CryptoJS/components/hmac.js"></script>
+<script src="apiGateway-js-sdk 6/lib/CryptoJS/components/enc-base64.js"></script>
+
+<!-- API Gateway Core -->
+<script src="apiGateway-js-sdk 6/lib/url-template/url-template.js"></script>
+<script src="apiGateway-js-sdk 6/lib/apiGatewayCore/sigV4Client.js"></script>
+<script src="apiGateway-js-sdk 6/lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script src="apiGateway-js-sdk 6/lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script src="apiGateway-js-sdk 6/lib/apiGatewayCore/utils.js"></script>
+
+<!-- Main API client -->
+<script src="apiGateway-js-sdk 6/apigClient.js"></script>
+
+<!-- Your application -->
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Reset & base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* Page title */
+h1 {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Section container: upload + search side by side */
+.section-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+/* Upload and search cards */
+.card {
+    width: 380px;
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+/* Card title */
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* File upload box */
+.upload-box {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    background: #f1f5f9;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.upload-box:hover {
+    border-color: #94a3b8;
+    background: #e2e8f0;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 15px;
+    margin-bottom: 12px;
+    background: white;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e3fa8;
+}
+
+/* Search bar layout */
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+}
+
+.search-btn {
+    width: 120px;
+}
+
+/* Message text (success / error) */
+.msg {
+    margin-top: 8px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+/* Results grid */
+.results-grid {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Photo card */
+.photo-card {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.photo-card .meta {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #475569;
+}
